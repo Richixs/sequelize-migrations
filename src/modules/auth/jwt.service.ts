@@ -25,7 +25,7 @@ export function generateAccessToken(payload: IAuthToken): string {
   );
 }
 
-export const validateSesionUser = (role: UserRole,req: Request, res: Response, next: any) => {
+export const validateSesionUser = (req: Request, res: Response, next: any) => {
   // Middleware logic to validate user session
   const { authorization } = req.headers;
 
